@@ -8,54 +8,6 @@ nohup: ignoring input
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 738-124-701
-76.167.175.157 - - [21/Nov/2020 19:54:50] "[37mPOST /ai HTTP/1.1[0m" 200 -
-72.220.10.66 - - [21/Nov/2020 19:54:52] "[31m[1mGET /ai HTTP/1.1[0m" 405 -
-35.196.132.85 - - [21/Nov/2020 19:55:07] "[31m[1mGET /ai HTTP/1.1[0m" 405 -
-76.167.175.157 - - [21/Nov/2020 19:55:24] "[37mPOST /ai HTTP/1.1[0m" 200 -
-76.167.175.157 - - [21/Nov/2020 19:55:27] "[37mPOST /ai HTTP/1.1[0m" 200 -
-76.167.175.157 - - [21/Nov/2020 19:55:29] "[37mPOST /ai HTTP/1.1[0m" 200 -
-72.220.10.66 - - [21/Nov/2020 19:55:47] "[37mPOST /ai HTTP/1.1[0m" 200 -
-76.167.175.157 - - [21/Nov/2020 19:56:20] "[37mPOST /ai HTTP/1.1[0m" 200 -
-76.88.112.21 - - [21/Nov/2020 19:57:15] "[35m[1mPOST /ai HTTP/1.1[0m" 500 -
-Traceback (most recent call last):
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
-    response = self.handle_exception(e)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 1953, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 1968, in finalize_request
-    response = self.make_response(rv)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 2098, in make_response
-    "The view function did not return a valid response. The"
-TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
-76.88.112.21 - - [21/Nov/2020 19:58:49] "[35m[1mPOST /ai HTTP/1.1[0m" 500 -
-Traceback (most recent call last):
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
-    return self.wsgi_app(environ, start_response)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
-    response = self.handle_exception(e)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 1953, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 1968, in finalize_request
-    response = self.make_response(rv)
-  File "/home/username/anaconda3/envs/tf/lib/python3.6/site-packages/flask/app.py", line 2098, in make_response
-    "The view function did not return a valid response. The"
-TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
- * Detected change in '/home/username/webshare-ai/src/app.py', reloading
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 738-124-701
-76.88.112.21 - - [21/Nov/2020 19:59:14] "[37mPOST /ai HTTP/1.1[0m" 200 -
+WARNING:tensorflow:Model was constructed with shape (None, 299, 299, 3) for input Tensor("input_1:0", shape=(None, 299, 299, 3), dtype=float32), but it was called on an input with incompatible shape (None, 229, 229, 3).
+76.167.175.157 - - [21/Nov/2020 20:46:16] "[37mPOST /ai HTTP/1.1[0m" 200 -
+76.88.112.21 - - [21/Nov/2020 20:46:40] "[37mPOST /ai HTTP/1.1[0m" 200 -
