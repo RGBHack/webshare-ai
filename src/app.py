@@ -15,7 +15,7 @@ import string
 app = Flask(__name__)
 model = ResNet50(weights='imagenet')
 
-ALLOWED_EXTENSIONS = {"jpg"}
+ALLOWED_EXTENSIONS = {"jpg", "png"}
 upP = "../usr_data"
 
 
@@ -44,6 +44,6 @@ def pp():
         preds = model.predict(x)
         
         os.remove(os.path.join(upP, filename2))
-        return decode_predictions(preds, top=3)[0][0][1]
+        return str(decode_predictions(preds, top=3)[0])
 
 app.run(debug=True, host='0.0.0.0', port=80)
