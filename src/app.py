@@ -8,17 +8,20 @@ import numpy as np
 
 from flask import Flask, render_template, make_response, flash, redirect, request, url_for, send_from_directory
 from werkzeug.utils import secure_filename
+from flask_cors import CORS, cross_origin
 import os
 import random
 import string
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 model = Xception(weights='imagenet')
 
 ALLOWED_EXTENSIONS = {"jpg", "png"}
 upP = "../usr_data"
 
-
+@cross_origin()
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS

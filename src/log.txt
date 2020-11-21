@@ -11,3 +11,19 @@ nohup: ignoring input
 WARNING:tensorflow:Model was constructed with shape (None, 299, 299, 3) for input Tensor("input_1:0", shape=(None, 299, 299, 3), dtype=float32), but it was called on an input with incompatible shape (None, 229, 229, 3).
 76.167.175.157 - - [21/Nov/2020 20:46:16] "[37mPOST /ai HTTP/1.1[0m" 200 -
 76.88.112.21 - - [21/Nov/2020 20:46:40] "[37mPOST /ai HTTP/1.1[0m" 200 -
+76.167.175.157 - - [21/Nov/2020 20:49:30] "[37mPOST /ai HTTP/1.1[0m" 200 -
+76.167.175.157 - - [21/Nov/2020 20:49:37] "[37mPOST /ai HTTP/1.1[0m" 200 -
+76.167.175.157 - - [21/Nov/2020 20:49:39] "[37mPOST /ai HTTP/1.1[0m" 200 -
+76.167.175.157 - - [21/Nov/2020 20:49:44] "[37mPOST /ai HTTP/1.1[0m" 200 -
+139.162.119.197 - - [21/Nov/2020 21:16:07] "[33mGET / HTTP/1.1[0m" 404 -
+72.220.10.66 - - [21/Nov/2020 21:25:55] "[37mPOST /ai HTTP/1.1[0m" 200 -
+76.176.49.232 - - [21/Nov/2020 21:32:48] "[37mPOST /ai HTTP/1.1[0m" 200 -
+76.176.49.232 - - [21/Nov/2020 21:35:05] "[37mPOST /ai HTTP/1.1[0m" 200 -
+173.208.213.170 - - [21/Nov/2020 21:36:09] "[33mGET / HTTP/1.1[0m" 404 -
+76.176.49.232 - - [21/Nov/2020 21:37:26] "[37mPOST /ai HTTP/1.1[0m" 200 -
+ * Detected change in '/home/username/webshare-ai/src/app.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/username/webshare-ai/src/app.py", line 11, in <module>
+    from flask_cors import CORS, cross_origin
+ModuleNotFoundError: No module named 'flask_cors'
