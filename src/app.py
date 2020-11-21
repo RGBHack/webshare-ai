@@ -21,13 +21,12 @@ model = Xception(weights='imagenet')
 ALLOWED_EXTENSIONS = {"jpg", "png"}
 upP = "../usr_data"
 
-@cross_origin()
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-
+@cross_origin()
 @app.route('/ai', methods=["POST"])
 def pp():
     file = request.files['file']
